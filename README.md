@@ -1,2 +1,2 @@
 # Two_Way_ChattingGUI
-Server-client chatting. (socket chatting)
+Server-client chatting with GUI. (socket chatting)
