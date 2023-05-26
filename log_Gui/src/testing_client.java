@@ -26,7 +26,7 @@ public class testing_client extends Thread {
     static ArrayList<String> flag_array = new ArrayList<String>();
     public void log_writer(){
         try {
-            FileWriter my_writer = new FileWriter("C:\\Users\\msi-nb\\IdeaProjects\\log_Gui\\src\\client_log.txt");
+            FileWriter my_writer = new FileWriter("client_log.txt");
             int counter_server =0;
             int counter_client =0;
             for (int j = 0; j < flag_array.size(); j++) {
