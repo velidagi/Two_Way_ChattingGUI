@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
@@ -60,7 +59,7 @@ public class testing_server extends Thread {
     public void set_label_s (String label_s){
         this.message_label.setText("Sending Message: "+label_s);
     }
-    public void chat_setting_server (){
+    public void chat_set_server(){
         textArea1.setText("");
         int counter_server =0;
         int counter_client =0;
@@ -89,7 +88,7 @@ public class testing_server extends Thread {
                 set_message_label(line);
                 flag_array.add("r");
                 reading_array.add(line);
-                chat_setting_server();
+                chat_set_server();
             }
 
             catch (IOException i) {
@@ -149,7 +148,7 @@ public class testing_server extends Thread {
                     set_label_s(sending_message);
                     flag_array.add("s");
                     sending_array.add(sending_message);
-                    chat_setting_server();
+                    chat_set_server();
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 }
@@ -168,5 +167,9 @@ public class testing_server extends Thread {
     public static void main(String[] args) {
         testing_server thread = new testing_server();
         thread.start();
+    }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
     }
 }
