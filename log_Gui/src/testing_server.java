@@ -168,8 +168,4 @@ public class testing_server extends Thread {
         testing_server thread = new testing_server();
         thread.start();
     }
-
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-    }
 }
